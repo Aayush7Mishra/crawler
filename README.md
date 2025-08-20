@@ -6,7 +6,7 @@ A modular web crawler designed to extract content
 
 - **JavaScript Execution**: Full JavaScript rendering with crawl4ai
 - **Structured Data Extraction**: Schema.org, OpenGraph, Twitter Cards
-- **GEO Data Normalization**: Specialized extraction for geographic content
+- **GEO Data Normalization**: Specialized extraction for geo content
 - **Meta Data Parsing**: Title, description, canonical URLs, language info
 - **Link & Image Analysis**: Internal/external link classification
 - **DOM Diff Analysis**: Track JavaScript-induced changes
