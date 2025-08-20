@@ -15,7 +15,10 @@ import asyncio
 import sys
 from urllib.parse import urlparse
 
-from crawler import GEOCrawler, HTMLParser, DataNormalizer, OutputHandler
+from .core_crawler import GEOCrawler
+from .html_parser import HTMLParser
+from .data_normalizer import DataNormalizer
+from .output_handler import OutputHandler
 
 
 class GEOCrawlerOrchestrator:
@@ -36,7 +39,7 @@ class GEOCrawlerOrchestrator:
         
         try:
             # Step 1: Get HTTP metadata
-            print("🌐 Gathering HTTP metadata...")
+            print("Gathering HTTP metadata...")
             http_info = await self.crawler.get_http_metadata(url)
             
             # Step 2: Fetch and render page content
@@ -147,7 +150,7 @@ async def main():
             # Add https:// if no protocol specified
             if not url.startswith(('http://', 'https://')):
                 url = 'https://' + url
-                print(f"🔧 Corrected to: {url}")
+                print(f"Corrected to: {url}")
             
             # Basic URL validation
             try:
