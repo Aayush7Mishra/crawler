@@ -1,6 +1,6 @@
 # GEO Web Crawler
 
-A modular web crawler designed to extract content exactly as modern LLMs would see it, optimized for Geographic/Location analysis.
+A modular web crawler designed to extract content
 
 ## Features
 
